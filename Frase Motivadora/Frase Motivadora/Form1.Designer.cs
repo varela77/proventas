@@ -1,4 +1,4 @@
-﻿namespace Frase_Motivadora
+﻿namespace frase_motivadora
 {
     partial class Form1
     {
@@ -33,9 +33,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(74, 92);
+            this.button1.Location = new System.Drawing.Point(71, 89);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 66);
+            this.button1.Size = new System.Drawing.Size(145, 71);
             this.button1.TabIndex = 0;
             this.button1.Text = "Presionar";
             this.button1.UseVisualStyleBackColor = true;

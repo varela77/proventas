@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Frase_Motivadora.Properties
+namespace frase_motivadora.Properties
 {
 
 

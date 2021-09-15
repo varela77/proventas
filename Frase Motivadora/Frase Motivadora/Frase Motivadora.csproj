@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E2306943-E709-42E4-A086-39BA88827FDE}</ProjectGuid>
+    <ProjectGuid>{6BCE33D3-E82B-451F-8435-D7DB39B94284}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Frase_Motivadora</RootNamespace>
-    <AssemblyName>Frase Motivadora</AssemblyName>
+    <RootNamespace>frase_motivadora</RootNamespace>
+    <AssemblyName>frase motivadora</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
