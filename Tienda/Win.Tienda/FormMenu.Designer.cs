@@ -53,7 +53,7 @@
             this.seguridadToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(492, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(504, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,14 +64,14 @@
             this.mantenimiento2ToolStripMenuItem,
             this.mantenimiento3ToolStripMenuItem});
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
+            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.mantenimientoToolStripMenuItem.Text = "Producto";
             // 
             // mantenimiento1ToolStripMenuItem
             // 
             this.mantenimiento1ToolStripMenuItem.Name = "mantenimiento1ToolStripMenuItem";
             this.mantenimiento1ToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.mantenimiento1ToolStripMenuItem.Text = "Mantenimiento1";
+            this.mantenimiento1ToolStripMenuItem.Text = "Modelo";
             this.mantenimiento1ToolStripMenuItem.Click += new System.EventHandler(this.mantenimiento1ToolStripMenuItem_Click);
             // 
             // mantenimiento2ToolStripMenuItem
@@ -116,21 +116,21 @@
             // reporte1ToolStripMenuItem
             // 
             this.reporte1ToolStripMenuItem.Name = "reporte1ToolStripMenuItem";
-            this.reporte1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reporte1ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.reporte1ToolStripMenuItem.Text = "Reporte1";
             this.reporte1ToolStripMenuItem.Click += new System.EventHandler(this.reporte1ToolStripMenuItem_Click);
             // 
             // reporte2ToolStripMenuItem
             // 
             this.reporte2ToolStripMenuItem.Name = "reporte2ToolStripMenuItem";
-            this.reporte2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reporte2ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.reporte2ToolStripMenuItem.Text = "Reporte2";
             this.reporte2ToolStripMenuItem.Click += new System.EventHandler(this.reporte2ToolStripMenuItem_Click);
             // 
             // reporte3ToolStripMenuItem
             // 
             this.reporte3ToolStripMenuItem.Name = "reporte3ToolStripMenuItem";
-            this.reporte3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reporte3ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.reporte3ToolStripMenuItem.Text = "Reporte3";
             this.reporte3ToolStripMenuItem.Click += new System.EventHandler(this.reporte3ToolStripMenuItem_Click);
             // 
@@ -151,9 +151,10 @@
             // 
             // FormMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 381);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackgroundImage = global::Win.Tienda.Properties.Resources.a3570047_a6f4_467f_ab14_8cb5ccf3b4ed;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(504, 393);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;

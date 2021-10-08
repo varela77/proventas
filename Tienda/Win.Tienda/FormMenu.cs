@@ -30,7 +30,7 @@ namespace Win.Tienda
 
         private void mantenimiento1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formMantenimiento1 = new FormMantenimiento1();
+            var formMantenimiento1 = new FormModelo();
             formMantenimiento1.MdiParent = this;
             formMantenimiento1.Show();
         }

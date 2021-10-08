@@ -63,9 +63,89 @@ namespace Win.Tienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _69564322_papel_o_plástico_de_fondo_azul_gris_oscuro_color_o_la_textura {
+            get {
+                object obj = ResourceManager.GetObject("69564322-papel-o-plástico-de-fondo-azul-gris-oscuro-color-o-la-textura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a3570047_a6f4_467f_ab14_8cb5ccf3b4ed {
+            get {
+                object obj = ResourceManager.GetObject("a3570047-a6f4-467f-ab14-8cb5ccf3b4ed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Azul_Gris {
+            get {
+                object obj = ResourceManager.GetObject("Azul-Gris", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga {
+            get {
+                object obj = ResourceManager.GetObject("descarga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fortinet_1 {
             get {
                 object obj = ResourceManager.GetObject("fortinet-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gris_azulado {
+            get {
+                object obj = ResourceManager.GetObject("gris-azulado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rover_mars_35_spruce_7135_verde_agua_375x375 {
+            get {
+                object obj = ResourceManager.GetObject("rover-mars_35-spruce-7135-verde-agua-375x375", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap slate_grey_color {
+            get {
+                object obj = ResourceManager.GetObject("slate-grey-color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vinil_Store_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Vinil_Store_Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

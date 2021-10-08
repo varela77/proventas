@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Tienda;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,13 @@ namespace Win.Tienda
 {
     public partial class FormLogin : Form
     {
+        SeguridadBL _seguridad;
+
         public FormLogin()
         {
             InitializeComponent();
+
+            _seguridad = new SeguridadBL();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,38 +39,23 @@ namespace Win.Tienda
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string usuario1;
-            string usuario2;
-            string contrasena1;
-            string contrasena2;
+            string usuario;
+            string contrasena;
 
-            usuario1 = textBox1.Text;
-            usuario2 = textBox1.Text;
-            contrasena1 = textBox2.Text;
-            contrasena2 = textBox2.Text;
+            usuario = textBox1.Text;
+            contrasena = textBox2.Text;
+
+            var resultado = _seguridad.Autorizar(usuario, contrasena);
 
 
-            if (usuario1 == "admin" && contrasena1 == "123")
+            if (resultado == true)
             {
                 this.Close();
             }
             else
             {
-                if (usuario2 == "user" && contrasena2 == "456")
-                {
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Usuario o contraseña incorrecta");
-                }
-            }
-            
-
-            
-
-            
-            
+                MessageBox.Show("Usuario o contraseña incorrecta");
+            }            
         }
     }
 }

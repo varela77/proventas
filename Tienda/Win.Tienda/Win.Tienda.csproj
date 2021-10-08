@@ -70,11 +70,11 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMantenimiento1.cs">
+    <Compile Include="FormModelo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMantenimiento1.Designer.cs">
-      <DependentUpon>FormMantenimiento1.cs</DependentUpon>
+    <Compile Include="FormModelo.Designer.cs">
+      <DependentUpon>FormModelo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormReporte1.cs">
       <SubType>Form</SubType>
@@ -114,8 +114,8 @@
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMantenimiento1.resx">
-      <DependentUpon>FormMantenimiento1.cs</DependentUpon>
+    <EmbeddedResource Include="FormModelo.resx">
+      <DependentUpon>FormModelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReporte1.resx">
       <DependentUpon>FormReporte1.cs</DependentUpon>
@@ -139,6 +139,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\BL.Tienda.Modelo.datasource" />
+    <None Include="Properties\DataSources\BL.Tienda.ModeloBL.datasource" />
+    <None Include="Properties\DataSources\BL.Tienda.SeguridadBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -154,6 +157,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="fortinet-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL.Tienda\BL.Tienda.csproj">
+      <Project>{ee522eff-9935-4930-b4b2-0a84cb9c0471}</Project>
+      <Name>BL.Tienda</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vinil_Store_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="a3570047-a6f4-467f-ab14-8cb5ccf3b4ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="slate-grey-color.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rover-mars_35-spruce-7135-verde-agua-375x375.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Azul-Gris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gris-azulado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="69564322-papel-o-plástico-de-fondo-azul-gris-oscuro-color-o-la-textura.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
