@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace BL.Tienda
 {
+
     public class ModeloBL
     {
-        public BindingList<Modelo> ListaModelos { get; set; } 
 
+        public BindingList<Modelo> ListaModelos { get; set; } = new BindingList<Modelo>();
         public ModeloBL()
         {
-            ListaModelos = new BindingList<Modelo>();
-
             var modelo1 = new Modelo();
             modelo1.Id = 1;
             modelo1.Descipcion = "Vinyl Records Album: My Way";
@@ -44,6 +43,24 @@ namespace BL.Tienda
             modelo3.Activo = true;
 
             ListaModelos.Add(modelo3);
+
+        }
+        public void guardarModelo(int id, string artista, string descripcion, int existencia, double precio)
+        {
+            var modelo = new Modelo();
+            modelo.Id = id;
+            modelo.Descipcion = descripcion;
+            modelo.Artista = artista;
+            modelo.Precio = precio;
+            modelo.Existencia = existencia;
+            modelo.Activo = true;
+
+            ListaModelos.Add(modelo);
+        }
+
+        public void eliminarRegistro(int id)
+        {
+            ListaModelos.RemoveAt((id));
         }
 
         public BindingList<Modelo> ObtenerModelos()
@@ -51,6 +68,8 @@ namespace BL.Tienda
             return ListaModelos;
         }
     }
+
+   
 
     public class Modelo
     {
