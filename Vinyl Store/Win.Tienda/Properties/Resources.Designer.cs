@@ -63,6 +63,16 @@ namespace Win.Tienda.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _500_F_292735080_HQ3VnxNznezosU2pjRwvHnmf8MoKqW7y {
+            get {
+                object obj = ResourceManager.GetObject("500_F_292735080_HQ3VnxNznezosU2pjRwvHnmf8MoKqW7y", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _69564322_papel_o_plástico_de_fondo_azul_gris_oscuro_color_o_la_textura {
             get {
                 object obj = ResourceManager.GetObject("69564322-papel-o-plástico-de-fondo-azul-gris-oscuro-color-o-la-textura", resourceCulture);

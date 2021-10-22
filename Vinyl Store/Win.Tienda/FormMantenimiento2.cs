@@ -1,5 +1,4 @@
-﻿using BL.Tienda;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Win.Tienda
 {
-    public partial class FormModelo : Form
+    public partial class FormMantenimiento2 : Form
     {
-        ModeloBL _modelos;
-
-        public FormModelo()
+        public FormMantenimiento2()
         {
             InitializeComponent();
-
-            _modelos = new ModeloBL();
-            listaModelosBindingSource.DataSource = _modelos.ObtenerModelos();
         }
-
-       
     }
 }

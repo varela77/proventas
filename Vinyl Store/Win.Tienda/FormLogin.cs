@@ -57,5 +57,10 @@ namespace Win.Tienda
                 MessageBox.Show("Usuario o contraseña incorrecta");
             }            
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
