@@ -60,6 +60,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Contexto.datasource" />
+    <None Include="Properties\DataSources\Modelo.datasource" />
+    <None Include="Properties\DataSources\ModeloBL.datasource" />
+    <None Include="Properties\DataSources\Resultado.datasource" />
+    <None Include="Properties\DataSources\SeguridadBL.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

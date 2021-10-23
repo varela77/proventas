@@ -156,8 +156,10 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BL.Tienda.Contexto.datasource" />
     <None Include="Properties\DataSources\BL.Tienda.Modelo.datasource" />
     <None Include="Properties\DataSources\BL.Tienda.ModeloBL.datasource" />
+    <None Include="Properties\DataSources\BL.Tienda.Resultado.datasource" />
     <None Include="Properties\DataSources\BL.Tienda.SeguridadBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
