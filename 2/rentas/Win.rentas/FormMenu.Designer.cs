@@ -115,6 +115,7 @@
             this.reporteRentasToolStripMenuItem.Name = "reporteRentasToolStripMenuItem";
             this.reporteRentasToolStripMenuItem.Size = new System.Drawing.Size(233, 30);
             this.reporteRentasToolStripMenuItem.Text = "reporte rentas";
+            this.reporteRentasToolStripMenuItem.Click += new System.EventHandler(this.reporteRentasToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 

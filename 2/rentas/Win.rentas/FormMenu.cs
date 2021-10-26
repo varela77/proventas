@@ -57,5 +57,12 @@ namespace Win.rentas
             formRepoProd.MdiParent = this;
             formRepoProd.Show();
         }
+
+        private void reporteRentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formRepoRentas = new FormRepoRentas();
+            formRepoRentas.MdiParent = this;
+            formRepoRentas.Show();
+        }
     }
 }
