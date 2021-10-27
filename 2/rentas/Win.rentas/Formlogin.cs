@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLrentas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,14 @@ namespace Win.rentas
 {
     public partial class Formlogin : Form
     {
+
+        seguridadBL _seguridad;
+
         public Formlogin()
         {
             InitializeComponent();
+
+            _seguridad = new seguridadBL();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -24,14 +30,15 @@ namespace Win.rentas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string Usuarios;
+            string Contrasenas;
 
-            string usuario;
-            string contrasena;
+            Usuarios = textBox1.Text;
+            Contrasenas = textBox2.Text;
 
-            usuario = textBox1.Text;
-            contrasena = textBox2.Text;
+           var resultado = _seguridad.Autorizar(Usuarios, Contrasenas);
 
-            if (usuario == "admin" && contrasena == "123")
+            if (resultado == true)
             {
                 this.Close();
 

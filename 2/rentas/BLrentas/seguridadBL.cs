@@ -8,10 +8,22 @@ namespace BLrentas
 {
     public class seguridadBL
     {
-        public bool Autorizar()
+        public bool Autorizar(string usuarios, string contrasenas)
         {
-            return true;
+            if (usuarios =="admin" && contrasenas =="123")
+            {
+                return true;
+            }
+            else
+            {
+                if (usuarios == "user" && contrasenas == "456")
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
+        
     }
 }
