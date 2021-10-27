@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win.rentas", "Win.rentas\Win.rentas.csproj", "{FAD793B6-47F7-49AB-9BD2-17467966A97F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLrentas", "BLrentas\BLrentas.csproj", "{58254142-95B3-48F3-A4DC-8D949B8D1DA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FAD793B6-47F7-49AB-9BD2-17467966A97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAD793B6-47F7-49AB-9BD2-17467966A97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAD793B6-47F7-49AB-9BD2-17467966A97F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58254142-95B3-48F3-A4DC-8D949B8D1DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58254142-95B3-48F3-A4DC-8D949B8D1DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58254142-95B3-48F3-A4DC-8D949B8D1DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58254142-95B3-48F3-A4DC-8D949B8D1DA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -19,8 +19,13 @@ namespace Win.rentas
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formLogin = new Formlogin();
-            formLogin.ShowDialog();
+            login();
+        }
+
+        private void login()
+        {
+            var formlogin = new Formlogin();
+            formlogin.ShowDialog();
         }
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,6 +68,11 @@ namespace Win.rentas
             var formRepoRentas = new FormRepoRentas();
             formRepoRentas.MdiParent = this;
             formRepoRentas.Show();
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            login();
         }
     }
 }
