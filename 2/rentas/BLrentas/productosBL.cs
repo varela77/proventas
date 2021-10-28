@@ -46,8 +46,27 @@ namespace BLrentas
         public BindingList<producto> obtenerproductos()
         {
         return listaproductos;
-    }
+         }
+
+        public bool guardarproducto(producto producto)
+
+        {
+
+            if (producto.id == 0)
+            {
+                producto.id = listaproductos.Max(item => item.id) + 1;
+            }
+            return true;
         }
+
+        public void agregarproductos()
+        {
+            var nuevoproducto = new producto();
+
+            listaproductos.Add(nuevoproducto);
+        }
+
+    }
 
     public class producto
     {
