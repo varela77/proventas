@@ -48,15 +48,22 @@ namespace BLrentas
         return listaproductos;
          }
 
-        public bool guardarproducto(producto producto)
+        public resultado guardarproducto(producto producto)
 
         {
+            var resultado = validar(producto);
+            if (resultado.exitoso == false)
+            {
+                return resultado;
+            }
 
             if (producto.id == 0)
             {
                 producto.id = listaproductos.Max(item => item.id) + 1;
             }
-            return true;
+            resultado.exitoso = true;
+
+            return resultado;
         }
 
         public void agregarproductos()
@@ -66,6 +73,51 @@ namespace BLrentas
             listaproductos.Add(nuevoproducto);
         }
 
+        public bool eliminarproducto(int id)
+        {
+
+            foreach (var producto in listaproductos)
+            {
+                if (producto.id == id)
+                {
+                    listaproductos.Remove(producto);
+                    return true;
+                }
+            }
+            {
+
+            }
+            return false;
+        }
+
+        private resultado validar(producto producto)
+        {
+            var resultado = new resultado();
+            resultado.exitoso = true;
+
+            if (producto.descripcion == "")
+            {
+                resultado.mensaje = "ingrese una descripcion";
+                resultado.exitoso = false;
+            }
+
+            if (producto.existencia < 0)
+            {
+                resultado.mensaje = "la existencia debe ser mayor a cero";
+                resultado.exitoso = false;
+            }
+
+            if (producto.precio < 0)
+            {
+                resultado.mensaje = "el precio debe ser mayor a cero";
+                resultado.exitoso = false;
+            }
+
+
+
+
+            return resultado;
+        }
     }
 
     public class producto
@@ -78,4 +130,14 @@ namespace BLrentas
 
 
     }
+
+    public class resultado
+    {
+        public bool exitoso { get; set; }
+        public string mensaje { get; set; }
+
+
+
+    }
+
 }
