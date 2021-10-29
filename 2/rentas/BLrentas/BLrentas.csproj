@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="contexto.cs" />
     <Compile Include="productosBL.cs" />
     <Compile Include="seguridadBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
