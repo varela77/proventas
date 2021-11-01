@@ -1,6 +1,6 @@
-﻿namespace Win.Tienda
+﻿namespace Win.rentas
 {
-    partial class FormReporte1
+    partial class Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormReporte1
+            // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 403);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "FormReporte1";
-            this.Text = "Reporte";
+            this.ClientSize = new System.Drawing.Size(278, 244);
+            this.Name = "Clientes";
+            this.Text = "FormClientes";
             this.ResumeLayout(false);
 
         }
