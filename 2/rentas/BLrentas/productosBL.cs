@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.Entity;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace BLrentas
         public BindingList<producto> obtenerproductos()
         {
             _contexto.productos.Load();
+           
             listaproductos = _contexto.productos.Local.ToBindingList();
 
         return listaproductos;
@@ -107,6 +109,7 @@ namespace BLrentas
         public string descripcion { get; set; }
         public double precio { get; set; }
         public int existencia { get; set; }
+        public byte[] foto { get; set; }
         public bool activo { get; set; }
 
 
@@ -120,5 +123,6 @@ namespace BLrentas
 
 
     }
+   
 
 }

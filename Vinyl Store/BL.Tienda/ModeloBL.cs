@@ -8,14 +8,17 @@ using System.Threading.Tasks;
 
 namespace BL.Tienda
 {
+    public class ArgumentException : SystemException
+    {
+    }
     public class ModeloBL
     {
-        Contexto _contexto;
+        contexto _contexto;
         public BindingList<Modelo> ListaModelos { get; set; } 
 
         public ModeloBL()
         {
-            _contexto = new Contexto();
+            _contexto = new contexto();
             ListaModelos = new BindingList<Modelo>();
 
             
@@ -103,6 +106,7 @@ namespace BL.Tienda
         public string Descripcion { get; set; }
         public double Precio { get; set; }
         public int Existencia { get; set; }
+        public byte[] foto { get; set; }
         public bool Activo { get; set; }
         public string Artista { get; set; }
     }

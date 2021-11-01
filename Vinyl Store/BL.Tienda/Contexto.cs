@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace BL.Tienda
 {
-   public class Contexto : DbContext
+   public class contexto : DbContext
     {
-        public Contexto() : base("Musica")
+        public contexto() : base("Musica")
         {
 
         }
