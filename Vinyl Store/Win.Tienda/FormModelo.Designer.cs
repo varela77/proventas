@@ -1,4 +1,6 @@
-﻿namespace Win.Tienda
+﻿using System;
+
+namespace Win.Tienda
 {
     partial class FormModelo
     {
@@ -35,8 +37,8 @@
             System.Windows.Forms.Label existenciaLabel;
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label precioLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormModelo));
             System.Windows.Forms.Label fotoLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormModelo));
             this.listaModelosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.listaModelosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -59,6 +61,9 @@
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.precioTextBox = new System.Windows.Forms.TextBox();
             this.fotoPictureBox = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             activoLabel = new System.Windows.Forms.Label();
             artistaLabel = new System.Windows.Forms.Label();
             descripcionLabel = new System.Windows.Forms.Label();
@@ -132,6 +137,14 @@
             precioLabel.Size = new System.Drawing.Size(57, 20);
             precioLabel.TabIndex = 11;
             precioLabel.Text = "Precio:";
+            // 
+            // fotoLabel
+            // 
+            fotoLabel.AutoSize = true;
+            fotoLabel.Location = new System.Drawing.Point(381, 308);
+            fotoLabel.Name = "fotoLabel";
+            fotoLabel.Size = new System.Drawing.Size(0, 20);
+            fotoLabel.TabIndex = 13;
             // 
             // listaModelosBindingNavigator
             // 
@@ -333,14 +346,6 @@
             this.precioTextBox.Size = new System.Drawing.Size(522, 26);
             this.precioTextBox.TabIndex = 5;
             // 
-            // fotoLabel
-            // 
-            fotoLabel.AutoSize = true;
-            fotoLabel.Location = new System.Drawing.Point(381, 308);
-            fotoLabel.Name = "fotoLabel";
-            fotoLabel.Size = new System.Drawing.Size(0, 20);
-            fotoLabel.TabIndex = 13;
-            // 
             // fotoPictureBox
             // 
             this.fotoPictureBox.BackColor = System.Drawing.SystemColors.GrayText;
@@ -348,8 +353,30 @@
             this.fotoPictureBox.Location = new System.Drawing.Point(428, 308);
             this.fotoPictureBox.Name = "fotoPictureBox";
             this.fotoPictureBox.Size = new System.Drawing.Size(284, 139);
+            this.fotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fotoPictureBox.TabIndex = 14;
             this.fotoPictureBox.TabStop = false;
+            this.fotoPictureBox.Click += new System.EventHandler(this.fotoPictureBox_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(428, 498);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 42);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Agregar foto";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(596, 498);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 42);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Remover";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormModelo
             // 
@@ -357,6 +384,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(943, 579);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(fotoLabel);
             this.Controls.Add(this.fotoPictureBox);
             this.Controls.Add(activoLabel);
@@ -386,6 +415,11 @@
 
         }
 
+        private void fotoPictureBox_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.BindingSource listaModelosBindingSource;
@@ -410,5 +444,8 @@
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox precioTextBox;
         private System.Windows.Forms.PictureBox fotoPictureBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
