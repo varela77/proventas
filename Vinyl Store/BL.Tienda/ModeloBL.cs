@@ -106,9 +106,13 @@ namespace BL.Tienda
         public string Descripcion { get; set; }
         public double Precio { get; set; }
         public int Existencia { get; set; }
+        public int CategoriaId { get; set; }
+        public int tipoId { get; set; }
+        public Tipo tipo { get; set; }
         public byte[] foto { get; set; }
         public bool Activo { get; set; }
         public string Artista { get; set; }
+
     }
 
     public class Resultado
